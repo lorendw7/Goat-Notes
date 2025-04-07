@@ -62,7 +62,7 @@ export const deleteNoteAction = async (noteId: string) => {
 export const askAIAboutNotesAction = async (newQuestions: string[], responses: string[]) => {
 
   const user = await getUser();
-  if (!user) throw new Error("You must be logged in to delete a note");
+  if (!user) throw new Error("You must be logged in to ask AI questions");
 
   const notes = await prisma.note.findMany({
     where: { authorId: user.id },
