@@ -35,8 +35,8 @@ export async function AppSidebar() {
             ) : (
               <p>
                 <Link href="/login" className="underline">
-                  Login{" "}
-                </Link>
+                  Login
+                </Link>{" "}
                 to see your notes
               </p>
             )}
