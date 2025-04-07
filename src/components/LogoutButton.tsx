@@ -19,7 +19,7 @@ function LogoutButton() {
       toast.success("Logged Out", {
         description: "You have been successfully logged out",
       });
-      router.replace("/");
+      router.replace(`${process.env.NEXT_PUBLIC_BASE_URL}/`);
     } else {
       toast.error("Error", {
         description: errorMessage.errorMessage,

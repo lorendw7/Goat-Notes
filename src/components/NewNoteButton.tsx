@@ -18,13 +18,14 @@ const NewNoteButton = ({ user }: Props) => {
   const router = useRouter();
 
   const handleClickNewNoteButton = async () => {
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
     if (!user) {
-      router.push("/login");
+      router.push(`${baseUrl}/login`);
     } else {
       setLoading(true);
       const uuid = uuidv4();
       await createNoteAction(uuid);
-      router.push(`/?noteId=${uuid}`);
+      router.push(`${baseUrl}/?noteId=${uuid}`);
       toast.success("New Note Created");
       setLoading(false);
     }

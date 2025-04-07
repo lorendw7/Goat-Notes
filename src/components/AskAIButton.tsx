@@ -30,7 +30,8 @@ const AskAIButton = ({ user }: Props) => {
 
   const handleOpenChange = (isOpen: boolean) => {
     if (!user) {
-      router.push("/login");
+      const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+      router.push(`${baseUrl}/login`);
     } else {
       if (isOpen) {
         setQuestionText("");

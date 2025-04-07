@@ -38,7 +38,7 @@ const DeleteNoteButton = ({ noteId, deleteNoteLocally }: Props) => {
           description: "You have successfully deleted the note",
         });
         if (noteId === noteIdParam) {
-          router.replace("/");
+          router.replace(`${process.env.NEXT_PUBLIC_BASE_URL}/`);
         }
 
         deleteNoteLocally(noteId);

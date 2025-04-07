@@ -42,7 +42,7 @@ function AuthForm({ type }: Props) {
         toast.success(title, {
           description: description
         });
-        router.replace("/");
+        router.replace(`${process.env.NEXT_PUBLIC_BASE_URL}/`);
       }else {
         toast.error("Error", {
           description: errorMessage
