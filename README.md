@@ -1,13 +1,13 @@
 # Next.js Note-Taking App with AI Integration
 
-A full-stack note-taking application built with Next.js 15 App Router, featuring Supabase authentication, Prisma ORM, shadcn UI components, and OpenAI API integration. Deployed on Vercel.
+A full-stack note-taking application built with Next.js 15 App Router, featuring Supabase authentication, Prisma ORM, shadcn UI components, and DeepSeek API integration. Deployed on Vercel.
 
 ## Features
 
 - 📝 Create, edit, and organize notes
 - 🔐 Secure authentication with Supabase
 - 🗄️ Database management with Supabase and Prisma ORM
-- 💬 AI-powered note interactions using OpenAI API
+- 💬 AI-powered note interactions using DeepSeek API
 - 🎨 Modern UI built with shadcn components
 - ⚡ Fast performance with Next.js 15 App Router
 
